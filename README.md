@@ -1,2 +1,8 @@
-# node-boilerplate
-A boilerplate for a Serverless Node Lambda with logging, auto changelogs and other nice things
+# RayRay's Node Boilerplate
+
+## Motivation
+This boilerplate is designed as a super simple boilerplate to get a Node Lambda up and running using:
+- `Serverless` for deployment
+- `Sentry` for logging 
+- `ESLint` for linting with `eslint-config-airbnb-base` and `prettier`
+- `Jest` for testing
