@@ -2,7 +2,7 @@
   "name": "node-boilerplate",
   "version": "0.0.1",
   "description": "A boilerplate for a Serverless Node Lambda with logging, auto changelogs and other niceties",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
