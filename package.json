@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/rahulp959/node-boilerplate/issues"
   },
-  "homepage": "https://github.com/rahulp959/node-boilerplate#readme"
+  "homepage": "https://github.com/rahulp959/node-boilerplate#readme",
+  "devDependencies": {
+    "@babel/preset-env": "^7.9.0"
+  }
 }
