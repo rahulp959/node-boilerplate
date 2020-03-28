@@ -4,7 +4,7 @@
   "description": "A boilerplate for a Serverless Node Lambda with logging, auto changelogs and other niceties",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/rahulp959/node-boilerplate#readme",
   "devDependencies": {
-    "@babel/preset-env": "^7.9.0"
+    "@babel/preset-env": "^7.9.0",
+    "jest": "^25.2.3"
   }
 }
