@@ -8,14 +8,17 @@
     "dev": "serverless offline",
     "------ LINTING ------": "",
     "lint": "eslint .",
-    "prettier": "",
     "------ TEST ------": "",
     "test": "jest",
     "------ CI ------": "",
     "deploy": "",
     "destroy": "",
     "------ SERVERLESS ------": "",
-    "serverless:deploy": "sls deploy"
+    "serverless:deploy": "sls deploy",
+    "------ NPM Scripts ------": "",
+    "preversion": "yarn lint && yarn test",
+    "postversion": "git push --follow-tags",
+    "version": "auto-changelog -p && git add CHANGELOG.md"
   },
   "repository": {
     "type": "git",

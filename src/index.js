@@ -3,7 +3,10 @@ import sentryHandler from './utils/sentryHandler'
 // For some reason, Importing Sentry does not work at all. I'll figure it out another day
 const Sentry = require('@sentry/node');
 
-Sentry.init({ dsn: 'https://3333a73f1d6544b0926f10bd5835c690@sentry.io/5178520' });
+Sentry.init({
+  dsn: 'https://3333a73f1d6544b0926f10bd5835c690@sentry.io/5178520',
+  release: `${process.env.service_name}@${  process.env.npm_package_version}` 
+});
 
 function lambdaHandler(event, context) {
   console.log(`EVENT: \n${  JSON.stringify(event, null, 2)}`)

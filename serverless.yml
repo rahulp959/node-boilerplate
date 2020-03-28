@@ -9,6 +9,8 @@ plugins:
 provider:
   name: aws
   runtime: nodejs12.x
+  environment:
+    service_name: ${self:service}
 
 functions:
   index:
