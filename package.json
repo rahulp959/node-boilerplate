@@ -14,11 +14,7 @@
     "deploy": "",
     "destroy": "",
     "------ SERVERLESS ------": "",
-    "serverless:deploy": "sls deploy",
-    "------ NPM Scripts ------": "",
-    "preversion": "yarn lint && yarn test",
-    "postversion": "git push --follow-tags",
-    "version": "auto-changelog -p && git add CHANGELOG.md"
+    "serverless:deploy": "sls deploy"
   },
   "repository": {
     "type": "git",
