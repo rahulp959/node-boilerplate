@@ -7,7 +7,7 @@ export default function sentryHandler(lambdaHandler) {
     } catch (error) {
       Sentry.captureException(error);
       await Sentry.flush(2000);
-      return error;
+      throw error;
     }
   };
 }
