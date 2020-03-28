@@ -5,7 +5,7 @@
   "main": "src/index.js",
   "scripts": {
     "------ DEV ------": "",
-    "dev": "",
+    "dev": "serverless offline",
     "------ LINTING ------": "",
     "lint": "eslint .",
     "prettier": "",
@@ -13,7 +13,9 @@
     "test": "jest",
     "------ CI ------": "",
     "deploy": "",
-    "destroy": ""
+    "destroy": "",
+    "------ SERVERLESS ------": "",
+    "serverless:deploy": "sls deploy"
   },
   "repository": {
     "type": "git",
@@ -26,8 +28,10 @@
   },
   "homepage": "https://github.com/rahulp959/node-boilerplate#readme",
   "devDependencies": {
+    "@babel/core": "^7.9.0",
     "@babel/preset-env": "^7.9.0",
     "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.1.0",
     "eslint": "^6.8.0",
     "eslint-config-airbnb-base": "^14.1.0",
     "eslint-config-prettier": "^6.10.1",
@@ -35,6 +39,11 @@
     "eslint-plugin-jest": "^23.8.2",
     "eslint-plugin-prettier": "^3.1.2",
     "jest": "^25.2.3",
-    "prettier": "^2.0.2"
+    "prettier": "^2.0.2",
+    "serverless": "^1.67.0",
+    "serverless-offline": "^6.1.2",
+    "serverless-webpack": "^5.3.1",
+    "webpack": "^4.42.1",
+    "webpack-node-externals": "^1.7.2"
   }
 }
