@@ -16,3 +16,7 @@ This boilerplate is designed as a super simple boilerplate to get a Node Lambda 
 
 ## TODOs
 - Branch builds
+- Test on PR opening
+- Split workflows?
+- Auto service naming?
+- Env variables / secrets / git-crypt?
