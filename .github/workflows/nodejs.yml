@@ -54,16 +54,16 @@ jobs:
         node-version: ${{ matrix.node-version }}
 
     # Install Sentry CLI
-    -run: curl -sL https://sentry.io/get-cli/ | bash
+    - run: curl -sL https://sentry.io/get-cli/ | bash
 
     # Create new Sentry release
-    -run: export SENTRY_RELEASE=$(sentry-cli releases propose-version)
-    -run: sentry-cli releases new -p $SENTRY_PROJECT $SENTRY_RELEASE
-    -run: sentry-cli releases set-commits --auto $SENTRY_RELEASE
-    -run: sentry-cli releases finalize $SENTRY_RELEASE
+    - run: export SENTRY_RELEASE=$(sentry-cli releases propose-version)
+    - run: sentry-cli releases new -p $SENTRY_PROJECT $SENTRY_RELEASE
+    - run: sentry-cli releases set-commits --auto $SENTRY_RELEASE
+    - run: sentry-cli releases finalize $SENTRY_RELEASE
 
     # Create new deploy for this Sentry release
-    -run: sentry-cli releases deploys $SENTRY_RELEASE new -e $SENTRY_DEPLOY_ENVIRONMENT
+    - run: sentry-cli releases deploys $SENTRY_RELEASE new -e $SENTRY_DEPLOY_ENVIRONMENT
     
     - run: yarn
     - run: yarn serverless:deploy
