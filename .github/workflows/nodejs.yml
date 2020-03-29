@@ -20,18 +20,6 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
 
-    - name: Cache node modules
-      uses: actions/cache@v1
-      env:
-        cache-name: cache-node-modules
-      with:
-        path: ~/.npm # npm cache files are stored in `~/.npm` on Linux/macOS
-        key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/yarn.lock') }}
-        restore-keys: |
-          ${{ runner.os }}-build-${{ env.cache-name }}-
-          ${{ runner.os }}-build-
-          ${{ runner.os }}-
-
     - run: yarn
     - run: yarn lint
     - run: yarn test
@@ -41,6 +29,9 @@ jobs:
   publish:
     needs: test
     runs-on: ubuntu-latest
+
+    env:
+      SENTRY_AUTH_TOKEN: {{ secrets.SENTRY_AUTH_TOKEN }}
 
     strategy:
       matrix:
@@ -60,18 +51,19 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
 
-    - name: Cache node modules
-      uses: actions/cache@v1
-      env:
-        cache-name: cache-node-modules
-      with:
-        path: ~/node_modules # npm cache files are stored in `~/.npm` on Linux/macOS
-        key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/yarn.lock') }}
-        restore-keys: |
-          ${{ runner.os }}-build-${{ env.cache-name }}-
-          ${{ runner.os }}-build-
-          ${{ runner.os }}-
+    - run: |
+        # Install Sentry CLI
+        curl -sL https://sentry.io/get-cli/ | bash
 
+        # Create new Sentry release
+        export SENTRY_RELEASE=$(sentry-cli releases propose-version)
+        sentry-cli releases new -p $SENTRY_PROJECT $SENTRY_RELEASE
+        sentry-cli releases set-commits --auto $SENTRY_RELEASE
+        sentry-cli releases finalize $SENTRY_RELEASE
+
+        # Create new deploy for this Sentry release
+        sentry-cli releases deploys $SENTRY_RELEASE new -e $SENTRY_DEPLOY_ENVIRONMENT
+    
     - run: yarn
     - run: yarn serverless:deploy
       env:
