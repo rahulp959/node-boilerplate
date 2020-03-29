@@ -4,8 +4,7 @@ import sentryHandler from './utils/sentryHandler'
 const Sentry = require('@sentry/node');
 
 Sentry.init({
-  dsn: 'https://3333a73f1d6544b0926f10bd5835c690@sentry.io/5178520',
-  release: `${process.env.service_name}@${  process.env.npm_package_version}` 
+  dsn: 'https://3333a73f1d6544b0926f10bd5835c690@sentry.io/5178520'
 });
 
 function lambdaHandler(event, context) {
