@@ -32,6 +32,7 @@ jobs:
 
     env:
       SENTRY_AUTH_TOKEN: {{ secrets.SENTRY_AUTH_TOKEN }}
+      CI: true
 
     strategy:
       matrix:
@@ -65,5 +66,3 @@ jobs:
     
     - run: yarn
     - run: yarn serverless:deploy
-      env:
-        CI: true
