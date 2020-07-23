@@ -39,7 +39,7 @@
     "eslint-plugin-prettier": "^3.1.4",
     "jest": "^26.1.0",
     "prettier": "^2.0.5",
-    "serverless": "^1.76.0",
+    "serverless": "^1.76.1",
     "serverless-offline": "^6.5.0",
     "serverless-webpack": "^5.3.3",
     "webpack": "^4.43.0",
