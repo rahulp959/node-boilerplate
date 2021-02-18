@@ -28,7 +28,7 @@
   "homepage": "https://github.com/rahulp959/node-boilerplate#readme",
   "devDependencies": {
     "@babel/core": "^7.12.17",
-    "@babel/preset-env": "^7.12.16",
+    "@babel/preset-env": "^7.12.17",
     "babel-eslint": "^10.1.0",
     "babel-loader": "^8.2.2",
     "eslint": "^7.20.0",
