@@ -8389,10 +8389,10 @@ serverless-webpack@^5.3.5:
   optionalDependencies:
     ts-node ">= 8.3.0"
 
-serverless@^2.30.1:
-  version "2.30.1"
-  resolved "https://registry.yarnpkg.com/serverless/-/serverless-2.30.1.tgz#91574e80a0e4bf5965c148ff9c7f30b8ed33beec"
-  integrity sha512-pVVs/qidbk7y55D0/oVVXWgjwfdkJ7vfHBhpkpFLxmE1ltHQgnNmHYYVNPZJkSrOISd7QFdaOEqWA7RWvj/Mxg==
+serverless@^2.30.2:
+  version "2.30.2"
+  resolved "https://registry.yarnpkg.com/serverless/-/serverless-2.30.2.tgz#446012bdf450923d3f473fc1f4f2f20fad47dd7c"
+  integrity sha512-sJXQCz9a/BHr53PneoUJLkro5Hk4MQdvPcQ0YKv9LkAR32hfzK5GrjdkA2VtSmsFwe0RCbCkQRemAR6Nyb1ljg==
   dependencies:
     "@serverless/cli" "^1.5.2"
     "@serverless/components" "^3.7.3"
