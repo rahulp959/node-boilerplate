@@ -3149,6 +3149,11 @@ ci-info@^2.0.0:
   resolved "https://registry.yarnpkg.com/ci-info/-/ci-info-2.0.0.tgz#67a9e964be31a51e15e5010d58e6f12834002f46"
   integrity sha512-5tK7EtrZ0N+OLFMthtqOj4fI2Jeb88C4CAZPu25LDVUgXJ0A3Js4PMGqrn0JU1W0Mh1/Z8wZzYPxqUrXeBboCQ==
 
+ci-info@^3.1.1:
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/ci-info/-/ci-info-3.1.1.tgz#9a32fcefdf7bcdb6f0a7e1c0f8098ec57897b80a"
+  integrity sha512-kdRWLBIJwdsYJWYJFtAFFYxybguqeF91qpZaggjG5Nf8QKdizFG2hjqvaTXbxFIcYbSaD74KpAXv6BSm17DHEQ==
+
 cjs-module-lexer@^0.6.0:
   version "0.6.0"
   resolved "https://registry.yarnpkg.com/cjs-module-lexer/-/cjs-module-lexer-0.6.0.tgz#4186fcca0eae175970aee870b9fe2d6cf8d5655f"
@@ -8384,10 +8389,10 @@ serverless-webpack@^5.3.5:
   optionalDependencies:
     ts-node ">= 8.3.0"
 
-serverless@^2.30.0:
-  version "2.30.0"
-  resolved "https://registry.yarnpkg.com/serverless/-/serverless-2.30.0.tgz#9068352ad374b1bb7dca8c1cc54f33fe010f7714"
-  integrity sha512-vWoav1kwgslBD/bMXFVnF2//LN/DbLVwsRjRNlLfnSfyXTW2IJsb0vp7qAVA7i9jpGPxNJlWy24mFuF1dqHepw==
+serverless@^2.30.1:
+  version "2.30.1"
+  resolved "https://registry.yarnpkg.com/serverless/-/serverless-2.30.1.tgz#91574e80a0e4bf5965c148ff9c7f30b8ed33beec"
+  integrity sha512-pVVs/qidbk7y55D0/oVVXWgjwfdkJ7vfHBhpkpFLxmE1ltHQgnNmHYYVNPZJkSrOISd7QFdaOEqWA7RWvj/Mxg==
   dependencies:
     "@serverless/cli" "^1.5.2"
     "@serverless/components" "^3.7.3"
@@ -8402,7 +8407,7 @@ serverless@^2.30.0:
     cachedir "^2.3.0"
     chalk "^4.1.0"
     child-process-ext "^2.1.1"
-    ci-info "^2.0.0"
+    ci-info "^3.1.1"
     d "^1.0.1"
     dayjs "^1.10.4"
     decompress "^4.2.1"
