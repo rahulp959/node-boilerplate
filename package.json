@@ -46,6 +46,6 @@
     "webpack-node-externals": "^3.0.0"
   },
   "dependencies": {
-    "@sentry/node": "6.3.6"
+    "@sentry/node": "6.4.0"
   }
 }
