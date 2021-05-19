@@ -42,7 +42,7 @@
     "serverless": "^2.41.2",
     "serverless-offline": "^7.0.0",
     "serverless-webpack": "^5.5.0",
-    "webpack": "^5.37.0",
+    "webpack": "^5.37.1",
     "webpack-node-externals": "^3.0.0"
   },
   "dependencies": {
