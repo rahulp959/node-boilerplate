@@ -2615,10 +2615,10 @@ at-least-node@^1.0.0:
   resolved "https://registry.yarnpkg.com/at-least-node/-/at-least-node-1.0.0.tgz#602cd4b46e844ad4effc92a8011a3c46e0238dc2"
   integrity sha512-+q/t7Ekv1EDY2l6Gda6LLiX14rU9TV20Wa3ofeQmwPFZbOMo9DXrLbOjFaaclkXKWidIaopwAObQDqwWtGUjqg==
 
-aws-sdk@^2.834.0, aws-sdk@^2.941.0:
-  version "2.941.0"
-  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.941.0.tgz#7172cc719737028a7bf06ebde93dfa8e3cdfb645"
-  integrity sha512-MzVYHaZNtWy7UgFnCBg8rXFfSd4svjUVkLpQnPb/XJb3Qq4082SN5ZjaDITFFAQs/xttV3jm5jtbbcc5dpICYg==
+aws-sdk@^2.834.0, aws-sdk@^2.942.0:
+  version "2.942.0"
+  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.942.0.tgz#594d2e629ab4a2286eaf69c54658cea3acce4ec7"
+  integrity sha512-9Y+DWSTvolTJe0nl55sKnsPgtfBCV8WKDE8cAUhgn9MIb4tAGpwejS14AUmqeZ12J58AsgPT3PffdI7Hq9IEtQ==
   dependencies:
     buffer "4.9.2"
     events "1.1.1"
@@ -8026,10 +8026,10 @@ serverless-webpack@^5.5.1:
   optionalDependencies:
     ts-node ">= 8.3.0"
 
-serverless@^2.51.1:
-  version "2.51.1"
-  resolved "https://registry.yarnpkg.com/serverless/-/serverless-2.51.1.tgz#1f60f7ed8f723e5c8038a6a494f21f70e969d3a7"
-  integrity sha512-qFanRMNRvRC70VesEJqZb7MM1PtLsxtHGs0eghxZc/exJJFrtJlSoC10x9CP4NWJR4xz74B2mR6hS+jomAWQAg==
+serverless@^2.51.2:
+  version "2.51.2"
+  resolved "https://registry.yarnpkg.com/serverless/-/serverless-2.51.2.tgz#715e993e163a3a798bf936b39963257c6355d1cd"
+  integrity sha512-I2g7zrS9cGNfwMJFQiypUX0DlrxgbhRrmIWyhq784FFljgssEN/6dq5sYBp0nBaK5yPBlqSWILXzQ3jaeG7vIw==
   dependencies:
     "@serverless/cli" "^1.5.2"
     "@serverless/components" "^3.13.3"
@@ -8038,7 +8038,7 @@ serverless@^2.51.1:
     ajv "^6.12.6"
     ajv-keywords "^3.5.2"
     archiver "^5.3.0"
-    aws-sdk "^2.941.0"
+    aws-sdk "^2.942.0"
     bluebird "^3.7.2"
     boxen "^5.0.1"
     cachedir "^2.3.0"
